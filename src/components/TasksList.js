@@ -3,11 +3,20 @@ import "../styles/tasksList.css";
 
 import Task from "./Task";
 
-const TasksList = ({ list }) => {
+const TasksList = ({ tasksList, setTasksList }) => {
+  const onClickItem = (key) => {
+    let updatedList = [...tasksList];
+    updatedList[key].complete = !updatedList[key].complete;
+    setTasksList(updatedList);
+  };
+
+
   return (
     <div className="listContainer">
-      {list.map((element) => {
-        return <Task key={element.id} item={element} />;
+      {tasksList.map((element) => {
+        return (
+          <Task key={element.id} item={element} onClickItem={onClickItem} />
+        );
       })}
     </div>
   );

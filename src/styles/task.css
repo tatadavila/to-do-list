@@ -16,11 +16,25 @@
   width: 70%;
 }
 
+.card.done {
+  background-color: #edf1ba;
+}
+.card.done:hover,
 .card:hover {
-  background-color: #e6b5cf;
+  opacity: 0.7;
 }
 
 .card:active {
   position: relative;
   top: 2px;
+}
+
+.status {
+  color: #007514;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.done {
+  color: #7a2f23;
 }
