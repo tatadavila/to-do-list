@@ -5,12 +5,12 @@ const TopMenu = ({ filterInfo, setFilterInfo, setOpenModal }) => {
     setOpenModal(true);
   };
 
-  const handleOnChange = (position) => {
-    const updatedCheckedState = filterInfo.map((item, index) =>
-      index === position ? !item : item,
-    );
-    setFilterInfo(updatedCheckedState);
-  };
+  // const handleOnChange = (position) => {
+  //   const updatedCheckedState = filterInfo.map((item, index) =>
+  //     index === position ? !item : item,
+  //   );
+  //   setFilterInfo(updatedCheckedState);
+  // };
 
   return (
     <div className="topMenuContainer">
