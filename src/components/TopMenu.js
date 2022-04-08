@@ -18,7 +18,7 @@ const TopMenu = ({ filterInfo, setFilterInfo, setOpenModal }) => {
         New Task
       </button>
 
-      <div className="filter">
+      {/* <div className="filter">
         <p className="filterLabel">Filter By:</p>
 
         {filterInfo.map((item, index) => {
@@ -37,7 +37,7 @@ const TopMenu = ({ filterInfo, setFilterInfo, setOpenModal }) => {
             </li>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 };
