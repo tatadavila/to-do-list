@@ -3,13 +3,12 @@ import "../styles/tasksList.css";
 
 import Task from "./Task";
 
-const TasksList = ({ tasksList, setTasksList }) => {
+const TasksList = ({ filterInfo, tasksList, setTasksList }) => {
   const onClickItem = (key) => {
     let updatedList = [...tasksList];
     updatedList[key].complete = !updatedList[key].complete;
     setTasksList(updatedList);
   };
-
 
   return (
     <div className="listContainer">
