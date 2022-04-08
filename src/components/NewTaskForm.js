@@ -24,6 +24,7 @@ const Form = ({ lastId, setTasksList, tasksList, setOpenModal }) => {
         <h2 className="modalTitle">New Task</h2>
         <form className="form" onSubmit={handleSubmit}>
           <input
+          className="newTaskInput"
             type="text"
             onChange={(e) => handleInput(e)}
             value={taskName}

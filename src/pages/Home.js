@@ -5,13 +5,17 @@ import Form from "../components/NewTaskForm";
 
 import Tasks from "../data/tasks.json";
 
-const Home = ({ openModal, setOpenModal }) => {
+const Home = ({ filterInfo, openModal, setOpenModal }) => {
   const [tasksList, setTasksList] = useState(Tasks.data);
 
   return (
     <>
       {tasksList && (
-        <TasksList tasksList={tasksList} setTasksList={setTasksList} />
+        <TasksList
+          filterInfo={filterInfo}
+          tasksList={tasksList}
+          setTasksList={setTasksList}
+        />
       )}
       {openModal && (
         <Form

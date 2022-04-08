@@ -3,6 +3,10 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 1rem;
+  max-width: 50%;
+  max-height: 10%;
+  padding: 1rem;
+  width: auto;
 }
 
 .addButton {
@@ -30,4 +34,21 @@
 .addButton:active {
   position: relative;
   top: 1px;
+}
+
+.filter {
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.filterLabel {
+  white-space: nowrap;
+}
+
+li.filterItem {
+  list-style-type: none;
+  margin: 0 0 0 7px;
+  padding: 0;
 }
